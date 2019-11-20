@@ -1,0 +1,5 @@
+name: "AHK Neptun check"
+description: "Checks if neptun.txt exists and contains a Neptun code string"
+runs:
+  using: "docker"
+  image: "Dockerfile"
