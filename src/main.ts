@@ -30,7 +30,14 @@ async function run() {
       throw new Error("Hiba: neptun.txt ures. Error: neptun.txt is empty");
     }
 
-    return neptun;
+    const regex = /^[a-zA-Z0-9]{6}$/g;
+    if (!regex.test(neptun)) {
+      throw new Error(
+        "Hiba: neptun.txt ervenytelen neptun kodot tartalmaz. Error: neptun.txt contains an invalid neptun code"
+      );
+    }
+
+    return neptun.toUpperCase();
   }
 }
 

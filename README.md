@@ -2,7 +2,7 @@
 
 Checks if a a neptun.txt exists and it has Neptun code looking content.
 
-## Sample usage
+## Usage
 
 ```yml
 on: [push]
@@ -18,3 +18,17 @@ jobs:
       - name: Check neptun.txt
         uses: akosdudas/ahk-action-neptuncheck@master
 ```
+
+## Development
+
+Requirements:
+
+- NodeJS
+- Yarn
+
+Development process:
+
+1. `yarn install`
+1. code
+1. `yarn run build`
+1. push
