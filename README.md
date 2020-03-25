@@ -16,7 +16,7 @@ jobs:
         with:
           fetch-depth: 1
       - name: Check neptun.txt
-        uses: akosdudas/ahk-action-neptuncheck@master
+        uses: akosdudas/ahk-action-neptuncheck@v1
 ```
 
 ## Development
