@@ -1,6 +1,8 @@
-# AHK Neptun check GitHub Action
+# Ahk Neptun check GitHub Action
 
-Checks if a a neptun.txt exists and it has Neptun code looking content.
+Checks if a file named `neptun.txt` exists in the root of the repository and it has _Neptun code_ looking content.
+
+Please refer to <https://akosdudas.github.io/automated-homework-evaluation/> for the "big picture."
 
 ## Usage
 
@@ -9,7 +11,7 @@ on: [push]
 
 jobs:
   job1:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v1
@@ -18,6 +20,10 @@ jobs:
       - name: Check neptun.txt
         uses: akosdudas/ahk-action-neptuncheck@v1
 ```
+
+## What happens when added to the workflow
+
+If the file with the required content exists, the step will complete. Otherwise the step will fail the workflow.
 
 ## Development
 
