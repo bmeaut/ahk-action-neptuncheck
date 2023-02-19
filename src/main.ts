@@ -12,7 +12,7 @@ async function run() {
   function getNeptunCode(): string {
     if (!fs.existsSync("neptun.txt")) {
       throw new Error(
-        "Hiba: neptun.txt nem talalhato. Error: neptun.txt does not exist"
+        "Hiba: neptun.txt nem talalhato. Error: neptun.txt does not exist."
       );
     }
 
@@ -22,18 +22,18 @@ async function run() {
       .filter(Boolean);
 
     if (neptunLines.length == 0) {
-      throw new Error("Hiba: neptun.txt ures. Error: neptun.txt is empty");
+      throw new Error("Hiba: neptun.txt ures. Error: neptun.txt is empty.");
     }
 
     const neptun = neptunLines[0].trim();
     if (neptun.length == 0) {
-      throw new Error("Hiba: neptun.txt ures. Error: neptun.txt is empty");
+      throw new Error("Hiba: neptun.txt ures. Error: neptun.txt is empty.");
     }
 
     const regex = /^[a-zA-Z0-9]{6}$/g;
     if (!regex.test(neptun)) {
       throw new Error(
-        "Hiba: neptun.txt ervenytelen neptun kodot tartalmaz. Error: neptun.txt contains an invalid neptun code"
+        "Hiba: neptun.txt ervenytelen neptun kodot tartalmaz. Error: neptun.txt contains an invalid neptun code."
       );
     }
 

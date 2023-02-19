@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akosdudas/ahk-action-neptun-check.git"
+    "url": "git+https://github.com/bmeaut/ahk-action-neptuncheck.git"
   },
   "keywords": [
     "actions"
