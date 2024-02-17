@@ -14,16 +14,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
         with:
           fetch-depth: 1
       - name: Check neptun.txt
-        uses: akosdudas/ahk-action-neptuncheck@v1
+        uses: akosdudas/ahk-action-neptuncheck@v2
 ```
 
 ## What happens when added to the workflow
 
-If the file with the required content exists, the step will complete. Otherwise the step will fail the workflow.
+If the file with the required content exists, the step will be completed. Otherwise, the step will fail the workflow.
 
 ## Development
 
